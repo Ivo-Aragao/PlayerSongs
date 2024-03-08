@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Player de Música</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #coverDisplay {
+            display: none;
+            width: 100%;
+            max-width: 200px; /* Defina o tamanho máximo da imagem */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="coverElement">
+            <img id="coverDisplay" alt="Capa do Álbum">
+        </div>
+        
+        <input id="volumeControl" type="range" min="0" max="100" value="50">
+        <div id="volumeDisplay">Volume: 50%</div>
+        <ul id="playlist"></ul>
+        <div id="musicDisplay">Música atual: Nenhuma</div>
+        <select id="songSelector">
+            <option value="-1">Selecione uma música</option>
+            <option value="0">Luke Combs - Fast Car (Lyrics)</option>
+            <option value="1">Gusttavo Lima - Relação Errada Part. Bruno & Marrone _ DVD Paraíso Particular</option>
+            <option value="2">Dino - Your Love (The Outfield) _ Rock e Flashback Acústico (Spotify & Deezer)</option>
+        </select>
+        <button id="playButton">Tocar Música</button>
+        <button id="stopButton">Parar Música</button>
+    </div>
+
+    <script src="musicPlayer.js"></script>
+</body>
+</html>

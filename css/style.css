@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: navy; /* Alterei para um tom de azul marinho */
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: white; /* Alterei a cor do texto para branco */
+}
+
+.container {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.1); /* Adicionei um fundo levemente transparente */
+    border-radius: 10px; /* Adicionei bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adicionei uma sombra suave */
+}
+
+#albumCover {
+    margin-bottom: 20px;
+}
+
+#albumCover img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; /* Adicionei um pequeno arredondamento às bordas da imagem */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adicionei uma sombra suave à imagem */
+}
+
+#musicDisplay {
+    font-size: 20px; /* Aumentei o tamanho da fonte */
+    margin-bottom: 10px; /* Ajustei o espaçamento inferior */
+}
+
+#volumeDisplay {
+    margin-bottom: 20px;
+}
+
+#songSelector {
+    font-size: 14px; /* Reduzi o tamanho da fonte */
+    padding: 5px 10px; /* Reduzi o espaçamento interno */
+    width: 100%; /* Defini o seletor para ocupar 100% da largura */
+}
+
+#playlist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#playlist li {
+    cursor: pointer;
+    padding: 10px 0; /* Adicionei um espaçamento interno aos itens da playlist */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Adicionei uma borda inferior entre os itens */
+}
+
+#playlist li:last-child {
+    border-bottom: none; /* Removi a borda inferior do último item */
+}
+
+button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Adicionei uma transição suave na mudança de cor de fundo */
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#songSelector {
+    font-size: 14px; /* Reduzi o tamanho da fonte */
+    padding: 5px; /* Reduzi o espaçamento interno */
+    width: calc(100% - 10px); /* Defini o seletor para ocupar 100% da largura com margens de 5px */
+    margin: 5px; /* Adicionei margens externas */
+    border-radius: 5px; /* Adicionei bordas arredondadas */
+    border: 1px solid #ccc; /* Adicionei uma borda */
+}
